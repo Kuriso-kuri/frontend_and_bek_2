@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Портфолио</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="logo">[ЛОГОТИП]</span>
+                <span class="name">Имя Студента</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="diary.html">Дневник</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-form">
+                <h1>Свяжитесь со мной</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Контакты:</h2>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>student@edu.ru</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>GitHub: username</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Город, Страна</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Контакты</p>
+    </footer>
+</body>
+</html>

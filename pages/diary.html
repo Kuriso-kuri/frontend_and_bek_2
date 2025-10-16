@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник - Портфолио</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="logo">[ЛОГОТИП]</span>
+                <span class="name">Имя Студента</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="diary.html" class="active">Дневник</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="diary-layout">
+            <div class="diary-entries">
+                <h2>Учебный дневник</h2>
+                <div class="timeline">
+                    <div class="timeline-item completed">
+                        <span class="date">15 дек</span>
+                        <span class="task">Верстка макета сайта ✓</span>
+                    </div>
+                    <div class="timeline-item completed">
+                        <span class="date">10 дек</span>
+                        <span class="task">JavaScript основы ✓</span>
+                    </div>
+                    <div class="timeline-item in-progress">
+                        <span class="date">05 дек</span>
+                        <span class="task">Работа с формами in progress</span>
+                    </div>
+                    <div class="timeline-item in-progress">
+                        <span class="date">01 дек</span>
+                        <span class="task">Адаптивный дизайн in progress</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <h2>Мой учебный прогресс</h2>
+                <div class="progress-chart">[ГРАФИК ПРОГРЕССА]</div>
+                
+                <h3>Текущие курсы</h3>
+                <div class="course-progress">
+                    <div class="course-item">
+                        <span>Веб-разработка</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                    <div class="course-item">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                    <div class="course-item">
+                        <span>React</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%"></div>
+                        </div>
+                        <span>50%</span>
+                    </div>
+                </div>
+                
+                <button class="add-entry-btn">Добавить запись</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Контакты</p>
+    </footer>
+</body>
+</html>
