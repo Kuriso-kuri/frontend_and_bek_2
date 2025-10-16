@@ -343,9 +343,9 @@ footer {
 }
 
 .student-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
     object-fit: cover;
     border: 4px solid #007bff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
