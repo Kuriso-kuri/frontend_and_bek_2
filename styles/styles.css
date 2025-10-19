@@ -275,6 +275,9 @@ h2 {
     margin-top: 1rem;
 }
 
+.add-entry-btn:hover {
+    background-color: #218838;
+}
 /* Контакты */
 .contact-section {
     display: grid;
