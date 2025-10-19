@@ -37,7 +37,7 @@ body {
 }
 
 .logo-img {
-    width: 50px;
+    width: 54px;
     height: 30px;
     object-fit: cover;
     border-radius: 4px;
@@ -151,6 +151,21 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-image {
+    height: 200px;
+    background-color: #ddd;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* Страница проектов */
