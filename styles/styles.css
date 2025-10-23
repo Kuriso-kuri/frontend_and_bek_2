@@ -68,7 +68,7 @@ body {
     color: white;
 }
 
-/* Главная страница */
+/* Главная */
 .hero {
     padding: 3rem 0;
 }
@@ -136,7 +136,7 @@ h2 {
     border-radius: 5px;
 }
 
-/* Проекты */
+/* Сами проекты */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -168,7 +168,7 @@ h2 {
     overflow: hidden;
 }
 
-/* Страница проектов */
+/* Проекты */
 .projects-header {
     display: flex;
     justify-content: space-between;
