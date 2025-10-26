@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+.skills .progress-bar {
+    background-color: #28a745; 
+}
+
 /* Кастомные стили для логотипа */
 .logo-img {
     width: 54px;
