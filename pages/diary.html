@@ -4,83 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дневник - Портфолио</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-brand">
-                <img src="../images/icons/mmm.jpg" alt="Логотип" class="logo-img">
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/icons/mmm.jpg" alt="Логотип" class="logo-img me-2">
                 <span class="name">Макеенков Матвей Максимович</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="diary.html">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-menu">
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="projects.html">Проекты</a></li>
-                <li><a href="diary.html" class="active">Дневник</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="container">
-        <section class="diary-layout">
-            <div class="diary-entries">
-                <h2>Учебный дневник</h2>
-                <div class="timeline">
-                    <div class="timeline-item completed">
-                        <span class="date">16 окт</span>
-                        <span class="task">КР №1 по ФиБ - выполнено</span>
-                    </div>
-                    <div class="timeline-item completed">
-                        <span class="date">17 окт</span>
-                        <span class="task">Практическое задание №1 по психологии - выполнено</span>
-                    </div>
-                    <div class="timeline-item in-progress">
-                        <span class="date">19 окт</span>
-                        <span class="task">13-14 практические занятия по ФиБ - в процессе</span>
-                    </div>
-                    <div class="timeline-item in-progress">
-                        <span class="date">31 октября</span>
-                        <span class="task">2.1-2.2 практические занятия по КорпСис - в процессе</span>
+    <main class="container my-5">
+        <div class="row">
+            <!-- Левая колонка - записи дневника -->
+            <div class="col-lg-8 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Учебный дневник</h2>
+                        
+                        <div class="timeline">
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-success me-3">16 окт</span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 text-success">КР №1 по ФиБ - выполнено ✓</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-success me-3">17 окт</span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 text-success">Практическое задание №1 по психологии - выполнено ✓</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-warning me-3">19 окт</span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 text-warning">13-14 практические занятия по ФиБ - в процессе</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-warning me-3">31 окт</span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 text-warning">2.1-2.2 практические занятия по КорпСис - в процессе</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="progress-section">
-                <h2>Мой учебный прогресс</h2>
-                <div class="progress-chart">ГРАФИК ПРОГРЕССА</div>
-                
-                <h3>Текущие курсы</h3>
-                <div class="course-progress">
-                    <div class="course-item">
-                        <span>ФиБ</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 44%"></div>
+            <!-- Правая колонка - прогресс -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Мой учебный прогресс</h3>
+                        
+                        <div class="mb-4">
+                            <h5 class="mb-3">Текущие курсы</h5>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>ФиБ</span>
+                                    <span>44%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 44%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Психология</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>БД</span>
+                                    <span>44%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 44%"></div>
+                                </div>
+                            </div>
                         </div>
-                        <span>44%</span>
-                    </div>
-                    <div class="course-item">
-                        <span>Психология</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 50%"></div>
-                        </div>
-                        <span>50%</span>
-                    </div>
-                    <div class="course-item">
-                        <span>Бд</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 44%"></div>
-                        </div>
-                        <span>44%</span>
+                        
+                        <button class="btn btn-success w-100">Добавить запись</button>
                     </div>
                 </div>
-                    <button class="add-entry-btn">Добавить запись</button>
-                </div>
-        </section>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>© 2025 Контакты</p>
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Контакты</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
