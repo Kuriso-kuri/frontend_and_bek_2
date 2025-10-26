@@ -28,11 +28,12 @@
                     <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Проекты
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="projects.html">Все проекты</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="projects.html#portfolio">Первое портфолио</a></li>
-                    </ul>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="pages/projects.html">Все проекты</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="pages/projects.html#portfolio">Курсы по P2P</a></li>
+        <li><a class="dropdown-item" href="pages/projects.html">Курсы по арбитражу</a></li>
+    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="diary.html">Дневник</a>
@@ -63,27 +64,74 @@
 
         <!-- Сетка проектов -->
         <div class="row">
-            <div class="col-12">
-                <div class="card project-card-large mb-4" id="portfolio">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../images/icons/project1.jpg" class="img-fluid rounded-start h-100" alt="Первое Портфолио" style="object-fit: cover;">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3 class="card-title">Первое портфолио</h3>
-                                <p class="card-text">HTML, CSS, JS</p>
-                                <p class="card-text">Мой первый сайт-портфолио, созданный в рамках учебного проекта. Адаптивный дизайн, современная верстка.</p>
-                                <div class="mt-3">
-                                    <button class="btn btn-primary me-2">Посмотреть проект</button>
-                                    <button class="btn btn-outline-secondary">Исходный код</button>
-                                </div>
-                            </div>
+    <div class="col-12">
+        <div class="card project-card-large mb-4" id="portfolio">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="../images/icons/project1.jpg" class="img-fluid rounded-start h-100" alt="Первое Портфолио" style="object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Первое портфолио</h3>
+                        <p class="card-text">HTML, CSS, JS</p>
+                        <p class="card-text">Мой первый сайт-портфолио.</p>
+                        <div class="mt-3">
+                            <button class="btn btn-success me-2">Купить проект - 10000 $</button>
+                            <button class="btn btn-outline-primary">Посмотреть проект</button>
+                            <button class="btn btn-outline-secondary">Исходный код</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- Сетка дополнительных проектов -->
+<h3 class="mt-5 mb-4">Другие проекты</h3>
+<div class="row">
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="../images/icons/project1.jpg" class="card-img-top" alt="Курсы по питону" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Курсы по питону</h5>
+                <p class="card-text flex-grow-1">Курсы по питону.</p>
+                <p class="text-muted small">Python, Питон, Piton</p>
+                <div class="mt-auto">
+                    <button class="btn btn-success w-100">Купить курс - 5 000 ₽</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="../images/icons/project2.jpg" class="card-img-top" alt="Курсы по P2P" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Курсы по P2P</h5>
+                <p class="card-text flex-grow-1">Курсы по P2P.</p>
+                <p class="text-muted small">Python, Css, Node.js</p>
+                <div class="mt-auto">
+                    <button class="btn btn-success w-100">Купить проект - 12 000 ₽</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="../images/icons/project3.jpg" class="card-img-top" alt="Курсы по арбитражу" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Курсы по арбитражу</h5>
+                <p class="card-text flex-grow-1">Курсы по арбитражу.</p>
+                <p class="text-muted small">Python, Django, PostgreSQL</p>
+                <div class="mt-auto">
+                    <button class="btn btn-success w-100">Купить проект - 2000 ₽</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </main>
 
     <footer class="bg-light py-3 mt-5">
