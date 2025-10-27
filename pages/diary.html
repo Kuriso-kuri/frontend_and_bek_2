@@ -207,5 +207,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+        function addDiaryEntry() {
+            const form = document.getElementById('diaryForm');
+            form.reset();
+            alert('Запись успешно добавлена!');
+        }
+        document.getElementById('addEntryModal').addEventListener('show.bs.modal', function () {
+            document.getElementById('diaryForm').reset();
+        });
+    </script>
 </body>
 </html>
