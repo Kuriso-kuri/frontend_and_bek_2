@@ -9,42 +9,42 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="../index.html">
-            <img src="../images/icons/mmm.jpg" alt="Логотип" class="logo-img me-2">
-            <span class="name">Макеенков Матвей Максимович</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Главная</a>
-                </li>
-                <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Проекты
-    </a>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="projects.html">Все проекты</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="projects.html#portfolio">Первое портфолио</a></li>
-        <li><a class="dropdown-item" href="projects.html#python-courses">Курсы по питону</a></li>
-        <li><a class="dropdown-item" href="projects.html#p2p-courses">Курсы по P2P</a></li>
-        <li><a class="dropdown-item" href="projects.html#arbitrage-courses">Курсы по арбитражу</a></li>
-    </ul>
-</li>
-                <li class="nav-item">
-                    <a class="nav-link" href="diary.html">Дневник</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacts.html">Контакты</a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/icons/mmm.jpg" alt="Логотип" class="logo-img me-2">
+                <span class="name">Макеенков Матвей Максимович</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Проекты
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="projects.html">Все проекты</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="projects.html#portfolio">Первое портфолио</a></li>
+                            <li><a class="dropdown-item" href="projects.html#python-courses">Курсы по питону</a></li>
+                            <li><a class="dropdown-item" href="projects.html#p2p-courses">Курсы по P2P</a></li>
+                            <li><a class="dropdown-item" href="projects.html#arbitrage-courses">Курсы по арбитражу</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diary.html">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <main class="container my-5">
         <div class="row">
@@ -90,66 +90,8 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#addEntryModal">Добавить запись</button>
 
-<!-- Форма для добавления записей в дневник -->
-<div class="modal fade" id="addEntryModal" tabindex="-1" aria-labelledby="addEntryModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="addEntryModalLabel">Добавить учебную запись</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="diaryForm">
-                    <div class="mb-3">
-                        <label for="entryDate" class="form-label">Дата:</label>
-                        <input type="date" class="form-control" id="entryDate" name="entryDate" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="entrySubject" class="form-label">Предмет:</label>
-                        <select class="form-select" id="entrySubject" name="entrySubject" required>
-                            <option value="" selected disabled>Выберите предмет</option>
-                            <option value="fib">Фронтенд и бэкенд разработка</option>
-                            <option value="psychology">Психология</option>
-                            <option value="database">Базы данных</option>
-                            <option value="corporate">Корпоративные системы</option>
-                            <option value="other">Другой предмет</option>
-                        </select>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="entryType" class="form-label">Тип работы:</label>
-                        <select class="form-select" id="entryType" name="entryType" required>
-                            <option value="" selected disabled>Выберите тип работы</option>
-                            <option value="practice">Практическая работа</option>
-                            <option value="control">Контрольная работа</option>
-                            <option value="homework">Домашнее задание</option>
-                            <option value="project">Проект</option>
-                            <option value="exam">Экзамен</option>
-                        </select>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="entryDescription" class="form-label">Описание работы:</label>
-                        <textarea class="form-control" id="entryDescription" name="entryDescription" rows="3" placeholder="Опишите выполненную работу..." required></textarea>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="entryStatus" class="form-label">Статус:</label>
-                        <select class="form-select" id="entryStatus" name="entryStatus" required>
-                            <option value="completed" selected>Выполнено</option>
-                            <option value="in-progress">В процессе</option>
-                            <option value="planned">Запланировано</option>
-                        </select>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
-                <button type="button" class="btn btn-success" onclick="addDiaryEntry()">Добавить запись</button>
-            </div>
+                        <button class="btn btn-success w-100 mt-4" data-bs-toggle="modal" data-bs-target="#addEntryModal">Добавить запись</button>
                     </div>
                 </div>
             </div>
@@ -192,14 +134,71 @@
                                 </div>
                             </div>
                         </div>
-        </div>
-    </div>
-</div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <div class="modal fade" id="addEntryModal" tabindex="-1" aria-labelledby="addEntryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addEntryModalLabel">Добавить учебную запись</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="diaryForm">
+                        <div class="mb-3">
+                            <label for="entryDate" class="form-label">Дата:</label>
+                            <input type="date" class="form-control" id="entryDate" name="entryDate" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="entrySubject" class="form-label">Предмет:</label>
+                            <select class="form-select" id="entrySubject" name="entrySubject" required>
+                                <option value="" selected disabled>Выберите предмет</option>
+                                <option value="fib">Фронтенд и бэкенд разработка</option>
+                                <option value="psychology">Психология</option>
+                                <option value="database">Базы данных</option>
+                                <option value="corporate">Корпоративные системы</option>
+                                <option value="other">Другой предмет</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="entryType" class="form-label">Тип работы:</label>
+                            <select class="form-select" id="entryType" name="entryType" required>
+                                <option value="" selected disabled>Выберите тип работы</option>
+                                <option value="practice">Практическая работа</option>
+                                <option value="control">Контрольная работа</option>
+                                <option value="homework">Домашнее задание</option>
+                                <option value="project">Проект</option>
+                                <option value="exam">Экзамен</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="entryDescription" class="form-label">Описание работы:</label>
+                            <textarea class="form-control" id="entryDescription" name="entryDescription" rows="3" placeholder="Опишите выполненную работу..." required></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="entryStatus" class="form-label">Статус:</label>
+                            <select class="form-select" id="entryStatus" name="entryStatus" required>
+                                <option value="completed" selected>Выполнено</option>
+                                <option value="in-progress">В процессе</option>
+                                <option value="planned">Запланировано</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-success" onclick="addDiaryEntry()">Добавить запись</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="bg-light py-3 mt-5">
         <div class="container text-center">
