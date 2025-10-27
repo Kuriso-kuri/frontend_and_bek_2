@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* Кастомные стили для логотипа */
 .logo-img {
     width: 54px;
     height: 30px;
@@ -21,7 +20,6 @@ body {
     border-radius: 4px;
 }
 
-/* Кастомные стили для фото */
 .photo-container {
     display: flex;
     justify-content: center;
@@ -40,7 +38,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для навыков */
 .skill-item {
     padding: 0.5rem 0;
 }
@@ -55,7 +52,6 @@ body {
     text-align: right;
 }
 
-/* Адаптивность для навыков на мобильных */
 @media (max-width: 576px) {
     .skill-item {
         flex-direction: column;
