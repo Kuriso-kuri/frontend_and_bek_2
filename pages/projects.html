@@ -219,35 +219,38 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function filterProjects(tech) {
-            document.querySelectorAll('.btn-outline-primary, .btn-primary').forEach(btn => {
-                btn.classList.remove('btn-primary');
-                btn.classList.add('btn-outline-primary');
-            });
+    function filterProjects(tech) {
+        const buttons = document.querySelectorAll('.d-flex.flex-wrap.gap-2 .btn');
+        buttons.forEach(btn => {
+            btn.classList.remove('btn-primary');
+            btn.classList.add('btn-outline-primary');
+        });
+        const activeButton = Array.from(buttons).find(btn => 
+            btn.textContent.toLowerCase().includes(tech) || 
+            (tech === 'all' && btn.textContent === 'Все')
+        );
+        if (activeButton) {
+            activeButton.classList.remove('btn-outline-primary');
+            activeButton.classList.add('btn-primary');
+        }
+        const projects = document.querySelectorAll('.project-item');
+    
+        projects.forEach(project => {
             if (tech === 'all') {
-                document.querySelector('.btn-outline-primary[onclick="filterProjects(\'all\')"]').classList.remove('btn-outline-primary');
-                document.querySelector('.btn-outline-primary[onclick="filterProjects(\'all\')"]').classList.add('btn-primary');
+                project.style.display = 'block';
             } else {
-                document.querySelector(`.btn-outline-primary[onclick="filterProjects('${tech}')"]`).classList.remove('btn-outline-primary');
-                document.querySelector(`.btn-outline-primary[onclick="filterProjects('${tech}')"]`).classList.add('btn-primary');
-            }
-            const projects = document.querySelectorAll('.project-item');
-            projects.forEach(project => {
-                if (tech === 'all') {
+                const projectTech = project.getAttribute('data-tech').toLowerCase();
+                if (projectTech.includes(tech)) {
                     project.style.display = 'block';
                 } else {
-                    const projectTech = project.getAttribute('data-tech');
-                    if (projectTech.includes(tech)) {
-                        project.style.display = 'block';
-                    } else {
-                        project.style.display = 'none';
-                    }
+                    project.style.display = 'none';
                 }
-            });
-        }
-        document.addEventListener('DOMContentLoaded', function() {
-            filterProjects('all');
+            }
         });
-    </script>
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        filterProjects('all');
+    });
+</script>
 </body>
 </html>
