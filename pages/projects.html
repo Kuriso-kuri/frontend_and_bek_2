@@ -252,5 +252,16 @@
         filterProjects('all');
     });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const buyButtons = document.querySelectorAll('.btn-success');
+    buyButtons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            alert('Нет, вы не хотите купить проект');
+        });
+    });
+});
+</script>
 </body>
 </html>
