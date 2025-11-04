@@ -226,10 +226,7 @@ h2.text-center {
 
 .display-4 {
   font-size: clamp(2rem, calc(1.5rem + 2vw), 3rem) !important;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #667eea;
   line-height: 1.1;
 }
 
