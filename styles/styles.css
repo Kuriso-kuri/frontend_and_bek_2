@@ -232,3 +232,42 @@ h2.text-center {
   background-clip: text;
   line-height: 1.1;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --bs-btn-border-width: 2px;
+  }
+  .btn,
+  .btn-outline-primary,
+  .btn-outline-secondary,
+  .project-card,
+  .card,
+  .navbar,
+  .form-control,
+  .form-select {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+  .skip-link {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+}
+
+.btn {
+  padding-block: max(0.5rem, calc((44px - 1em) / 2));
+}
+
+.footer {
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+}
