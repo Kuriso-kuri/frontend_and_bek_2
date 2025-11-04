@@ -127,8 +127,8 @@ main {
 
 section {
     border-bottom: 1px solid #e9ecef;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
+    padding-block: clamp(2rem, calc(1.5rem + 1vw), 3rem);
+    margin-block-end: clamp(2rem, calc(1.5rem + 1vw), 3rem);
 }
 
 section:last-of-type {
@@ -212,4 +212,23 @@ section:last-of-type {
       grid-template-columns: repeat(3, 1fr);
     }
   }
+}
+
+.main,
+section {
+  padding-inline: clamp(1rem, calc(0.5rem + 1vw), 2rem);
+}
+
+h2.text-center {
+  font-size: clamp(1.5rem, calc(1.1rem + 1.5vw), 2rem);
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-size: clamp(2rem, calc(1.5rem + 2vw), 3rem) !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
 }
