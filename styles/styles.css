@@ -110,7 +110,6 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-/* Улучшение кнопок */
 .btn {
     transition: all 0.3s ease;
 }
@@ -169,15 +168,8 @@ section:last-of-type {
   padding-block-end: 0.75rem;
   padding-inline-start: calc(1rem + env(safe-area-inset-left));
   padding-inline-end: calc(1rem + env(safe-area-inset-right));
-  background-color: #f8f9fa !important; /* сохраняем светлый фон как у bg-light */
+  background-color: #f8f9fa !important; 
   border-bottom: 1px solid #e9ecef;
-}
-
-.projects-preview__grid,
-.projects-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 1.5rem;
 }
 
 .project-card {
@@ -195,4 +187,29 @@ section:last-of-type {
 .project-card__title,
 .project-card__description {
   overflow-wrap: anywhere;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@supports (container-type: inline-size) {
+  .projects-area {
+    container-type: inline-size;
+    container-name: projects;
+  }
+
+  @container projects (min-width: 640px) {
+    .projects-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @container projects (min-width: 960px) {
+    .projects-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
