@@ -77,13 +77,14 @@ main {
     margin: 0 auto;
 }
 
-.student-photo {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+.hero__photo {
+    inline-size: 200px;
+    block-size: auto;
+    border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #007bff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    display: block;
+    margin: 0 auto;
 }
 
 .skill-item {
