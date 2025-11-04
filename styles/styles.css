@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+.skip-link {
+    position: absolute;
+    inset-inline-start: 1rem;
+    inset-block-start: -100%;
+    z-index: 10000;
+    padding: 0.5rem 0.75rem;
+    background: #111;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+    inset-block-start: 1rem;
+}
+
+:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+}
+
+a, button, input, textarea {
+    outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+    a, button, .nav-link {
+        min-height: 44px;
+        padding: 0.75rem 1rem;
+    }
+}
+
 :root {
   color-scheme: light dark;
 }
@@ -116,4 +149,25 @@ section:last-of-type {
         min-width: auto;
         align-self: flex-end;
     }
+}
+
+@media (pointer: coarse) {
+    a, button, .nav-link {
+        min-height: 44px;
+        padding: 0.75rem 1rem;
+    }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  isolation: isolate;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding-block-start: calc(0.75rem + env(safe-area-inset-top));
+  padding-block-end: 0.75rem;
+  padding-inline-start: calc(1rem + env(safe-area-inset-left));
+  padding-inline-end: calc(1rem + env(safe-area-inset-right));
+  background-color: #f8f9fa !important; /* сохраняем светлый фон как у bg-light */
+  border-bottom: 1px solid #e9ecef;
 }
