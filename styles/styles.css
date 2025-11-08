@@ -317,3 +317,14 @@ h2.text-center {
   height: auto;
   object-fit: cover;
 }
+
+.retina-image {
+    display: block;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
