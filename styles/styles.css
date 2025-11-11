@@ -328,3 +328,31 @@ h2.text-center {
         image-rendering: crisp-edges;
     }
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.required-asterisk {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+    outline: none;
+}
+
+.form-control:invalid:not(:focus) {
+    border-color: #dc3545;
+}

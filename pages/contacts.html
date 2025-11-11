@@ -53,27 +53,32 @@
             <div class="col-lg-8 mb-4">
     <div class="card">
         <div class="card-body">
-            <h1 class="card-title mb-4">Свяжитесь со мной</h1>
-            
-            <form id="contactForm">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Имя:</label>
-                            <input type="text" class="form-control" id="name" name="name" required placeholder="Введите ваше имя">
+            <h1 id="contact-form-title" class="card-title mb-4">Свяжитесь со мной</h1>
+            <p id="form-description" class="visually-hidden">
+    Заполните форму обратной связи. Поля, отмеченные звездочкой, обязательны для заполнения.
+            </p>
+            <form id="contactForm" aria-labelledby="contact-form-title" aria-describedby="form-description">
+                <fieldset>
+                    <legend class="visually-hidden">Основная информация</legend>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Имя: <span class="required-asterisk" aria-hidden="true">*</span></label>
+                                <input type="text" class="form-control" id="name" name="name" required aria-required="true" placeholder="Введите ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email: <span class="required-asterisk" aria-hidden="true">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" required aria-required="true" placeholder="example@mail.ru">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required placeholder="example@mail.com">
-                        </div>
-                    </div>
-                </div>
+                </fieldset>
                 
                 <div class="mb-3">
-                    <label for="subject" class="form-label">Тема обращения:</label>
-                    <select class="form-select" id="subject" name="subject" required>
+                    <label for="subject" class="form-label">Тема обращения: <span class="required-asterisk" aria-hidden="true">*</span></label>
+                    <select class="form-select" id="subject" name="subject" required aria-required="true">
                         <option value="" selected disabled>Выберите тему обращения</option>
                         <option value="project">Заказ проекта</option>
                         <option value="course">Покупка курса</option>
@@ -84,8 +89,8 @@
                 </div>
                 
                 <div class="mb-3">
-                    <label for="message" class="form-label">Сообщение:</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Опишите вашу задачу подробнее..."></textarea>
+                    <label for="message" class="form-label">Сообщение: <span class="required-asterisk" aria-hidden="true">*</span></label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required aria-required="true" placeholder="Опишите вашу задачу подробнее..."></textarea>
                 </div>
                 
                 <div class="mb-3 form-check">
