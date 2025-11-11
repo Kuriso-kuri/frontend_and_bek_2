@@ -356,3 +356,48 @@ h2.text-center {
 .form-control:invalid:not(:focus) {
     border-color: #dc3545;
 }
+
+.btn:focus,
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.btn:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 0 0 3px rgba(37, 99, 235, 0.5);
+}
+
+.nav-link:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+    background-color: #e6f3ff;
+}
+
+.card:focus-within {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skip-link:focus {
+    inset-block-start: 1rem;
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+    .btn:focus,
+    .nav-link:focus {
+        outline-width: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn:focus {
+        transform: none;
+        transition: none;
+    }
+}
