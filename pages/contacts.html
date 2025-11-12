@@ -16,7 +16,7 @@
                     <img src="../images/icons/mmm.jpg" srcset="../images/icons/mmm.jpg 1x, ../images/icons/mmm@2x.jpg 2x" alt="Логотип" class="logo-img me-2 retina-image">
                     <span class="name">Макеенков Матвей Максимович</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Переключить навигацию" aria-expanded="false" aria-controls="navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,10 +25,10 @@
                             <a class="nav-link" href="../index.html">Главная</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-menu">
                                 Проекты
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="projects.html">Все проекты</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="projects.html#portfolio">Первое портфолио</a></li>
@@ -57,7 +57,7 @@
             <p id="form-description" class="visually-hidden">
     Заполните форму обратной связи. Поля, отмеченные звездочкой, обязательны для заполнения.
             </p>
-            <form id="contactForm" aria-labelledby="contact-form-title" aria-describedby="form-description">
+            <form id="contactForm" novalidate aria-label="Форма обратной связи">
                 <fieldset>
                     <legend class="visually-hidden">Основная информация</legend>
                     <div class="row">
